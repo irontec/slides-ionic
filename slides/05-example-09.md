@@ -1,7 +1,7 @@
 ## Personalizar II
 
 
-- En *www/index.html* descomentamos la línea 12 para cargar el estilos desde *css/ionic.app.css*.
+- En *www/index.html* descomentamos la línea 12 para cargar los estilos desde *css/ionic.app.css*.
 
 - Eliminamos o comentamos las líneas 8 y 9 para no cargar *ionic.css* y *style.css*.
 

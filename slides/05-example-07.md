@@ -10,4 +10,4 @@
 </ion-footer-bar>
 
 ```
-- Con eso añadiremos un footer con dos botones, *izquierda* y *derecha* y en medio un texto que dice *footer*.
+- Con eso añadiremos un footer con dos botones, *izquierda* y *derecha* y en medio un texto que dice *Footer*.

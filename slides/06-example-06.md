@@ -1,6 +1,5 @@
 ## Rutas y estados
 
-
 - Gracias al **$urlRouteProvider** y **$stateProvider** podemos definir el cambio de pestañas.
 
     - **$stateProvider:** permite declarar diferentes estados según la URL y tendrá asociado un *template*.
