@@ -1,7 +1,15 @@
+.reveal pre code {
+  max-height: 420px;
+}
+
 .reveal pre {
     -webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+}
+
+.reveal ul li ul li:last-child{
+    margin-bottom: 40px;
 }
 
 .span4 p img {

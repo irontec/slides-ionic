@@ -1,11 +1,11 @@
 [
     "00-index.md",
     [
-        "01-app-types.html",
-        "01-app-types-01-list.html",
-        "01-app-types-02-natives.html",
-        "01-app-types-03-web.html",
-        "01-app-types-04-hybrid.html"
+        "01-app-types.md",
+        "01-app-types-01-list.md",
+        "01-app-types-02-natives.md",
+        "01-app-types-03-web.md",
+        "01-app-types-04-hybrid.md"
     ], [
         "02-what-is.md",
         "02-what-is-01-definition.md",
