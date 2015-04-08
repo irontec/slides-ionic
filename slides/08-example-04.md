@@ -1,3 +1,3 @@
 ## Estado del ejemplo
 
-![](assets/example_07.png)
+![](assets/example_08.png)

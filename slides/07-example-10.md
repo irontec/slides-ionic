@@ -19,9 +19,9 @@ $stateProvider.state('tab.lines', {
 ```
 angular.module('lines.controller', [])
 
-.controller('LinesCtrl', function($scope, $stateParams, $http) {
+.controller('LinesCtrl', function($scope, $stateParams, $http, ApiEndpoint) {
 
-    $http.get('http://openbizkaibus.appspot.com/api/Buscar_TextoHorarioLinea?codlinea=' + $stateParams.lineId)
+    $http.get(ApiEndpoint.url + '/Buscar_TextoHorarioLinea?codlinea=' + $stateParams.lineId)
         .then(function(response) {
 
             $scope.line = response.data;

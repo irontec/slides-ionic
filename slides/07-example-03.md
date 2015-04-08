@@ -3,7 +3,7 @@
 - Por último, haremos lo mismo con el estado *about*. Pasará a llamarse **tab.about**.
 
 ```
-.state('tab.about', {
+$stateProvider.state('tab.about', {
     url: '/about',
     views: {
         'tab-about': {

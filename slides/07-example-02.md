@@ -3,7 +3,7 @@
 - Añadiremos el nuevo estado *TownLines* y modificaremos *Towns* para que sean hijos de *Tab*.
 
 ```
-.state('tab.towns', {
+$stateProvider.state('tab.towns', {
     url: '/towns',
     views: {
         'tab-towns': {
@@ -12,7 +12,7 @@
         }
     }
 })
-.state('tab.town-lines', {
+$stateProvider.state('tab.town-lines', {
     url: '/towns/:townId',
     views: {
         'tab-towns': {

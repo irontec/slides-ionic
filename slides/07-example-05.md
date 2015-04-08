@@ -5,9 +5,9 @@
 ```
 angular.module('townLines.controller', [])
 
-.controller('TownLinesCtrl', function($scope, $stateParams, $http) {
+.controller('TownLinesCtrl', function($scope, $stateParams, $http, ApiEndpoint) {
 
-    $http.get('http://openbizkaibus.appspot.com/api/LineasMunicipio?codmunicipio=' + $stateParams.townId)
+    $http.get(ApiEndpoint.url + '/LineasMunicipio?codmunicipio=' + $stateParams.townId)
         .then(function(resp) {
 
             $scope.linesInTown = resp.data;

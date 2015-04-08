@@ -1,24 +1,18 @@
-## Personalizar I
+## Personalizar
 
 - Una buena forma de personalizar el proyecto es utilizar el *scss/ionic.app.scss* y las acciones de *Gulp*.
 
 - Primero hay que instalar *Gulp* y sus dependencias.
 
 ```bash
-npm install
+ionic setup sass
 
 ```
 
-- Cada vez que hagamos cambios en *scss/ionic.app.scss* y queramos generar el archivo *css/ionic.app.css*.
+- Modificamos el archivo *scss/ionic.app.scss* para personalizar el color de *$positive*.
 
-```bash
-gulp sass
-
+```css
+$positive: #99cd68;
 ```
 
-- Para autodetectar cambios en el archivo *scss* y generar automáticamente el archivo *css*.
-
-```bash
-gulp watch
-
-```
+- Generamos el archivo *css* y ejecutamos el proyecto para ver los cambios.

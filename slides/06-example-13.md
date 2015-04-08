@@ -14,9 +14,12 @@ $stateProvider.state('towns', {
 })
 ```
 
-- También habrá que especificar la inyección de dependencias en *angular.module*.
+- También habrá que especificar la inyección de dependencias en *angular.module* e incluir el *towns.js*
 
 ```
 angular.module('starter', ['ionic', 'about.controller', 'town.controller'])
+```
 
+```
+<script src="js/controllers/towns.js"></ script>
 ```

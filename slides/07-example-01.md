@@ -3,7 +3,7 @@
 - Añadiremos un nuevo estado abstracto para encapsular todas las pestañas y reutilizar código.
 
 ```
-.state('tab', {
+$stateProvider.state('tab', {
     url: "/tab",
     abstract: true,
     templateUrl: "templates/tabs.html"

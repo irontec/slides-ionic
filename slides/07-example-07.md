@@ -3,7 +3,7 @@
 - Necesitaremos modificar el archivo *tab-towns.html* para añadir el **href** para el cambio de estado.
 
 ```
-<a class="item item-icon-right" href="#/towns/{{lines.CodigoElemento | numberFixedLen:3}}" ng-repeat="lines in lineGroup.Registros">
+<a class="item item-icon-right" href="#/tab/towns/{{lines.CodigoElemento | numberFixedLen:3}}" ng-repeat="lines in lineGroup.Registros">
     {{lines.DescripcionElemento}}
     <i class="icon ion-ios-arrow-right"></i>
 </a>

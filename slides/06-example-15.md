@@ -1,3 +1,5 @@
-## Estado del ejemplo
+## Error CORS
 
-![](assets/example_04.png)
+#### CORS = Cross origin resource sharing.
+
+![](assets/error_cors.png)

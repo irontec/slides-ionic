@@ -10,10 +10,12 @@ ionic [run | emulate] [ios | android]
 
 - Para testear la aplicación en un dispositivo iOS, es necesario tener una cuenta de *Apple Developer*.
 
-- A lo largo de este curso, se va a utilizar un dispositivo android y por ello el comando a ejecutar será el siguiente.
+- A lo largo de este curso, se va a utilizar Chrome y su emulador de dispositivos.
+
+- Para ejecutar el proyecto en el navegador hay que lanzar el siguiente comando.
 
 
 ```bash
-ionic run android
+ionic serve
 
 ```
