@@ -1,2 +1,2 @@
-# Ejemplo práctico
-## Pestañas anidadas
+## Ejemplo práctico
+### Pestañas

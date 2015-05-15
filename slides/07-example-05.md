@@ -1,23 +1,12 @@
-## Town-Lines controller
+### Añadir pestañas
+#### Directivas utilizadas
 
-- Una vez que tengamos los estados bien configurados, crearemos un nuevo *controller*: *js/controllers/townLines.js*.
+- **```<ion-nav-bar>:```** Es la barra de navegación donde se mostrará el título de nuestra vista. Sustituirá el *header*.
 
-```
-angular.module('townLines.controller', [])
+- **```<ion-nav-view>:```** Es la directiva encargada de renderizar los templates del estado actual.
 
-.controller('TownLinesCtrl', function($scope, $stateParams, $http, ApiEndpoint) {
+- **```<ion-tabs>:```** Es la directiva que se encargará de agrupar las pestañas.
 
-    $http.get(ApiEndpoint.url + '/LineasMunicipio?codmunicipio=' + $stateParams.townId)
-        .then(function(resp) {
+- **```<ion-tab>:```** Si dicha pestaña está activa, creará un *content* según su contenido y gestionará su propio histórico.
 
-            $scope.linesInTown = resp.data;
-
-        }, function(err) {
-
-            console.error('ERR', err);
-
-        })
-})
-
-```
-- En este caso, además del *$http* necesitaremos el servicio **$stateParams**, para poder acceder a la variable de la URL.
+- **```<ion-nav-view name="nombre">:```** Al haber más de una directiva al mismo nivel y cada uno existe en su propia pestaña, hay que darles un nombre para evitar conflictos en el *router*.

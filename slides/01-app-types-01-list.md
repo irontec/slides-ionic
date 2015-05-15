@@ -1,5 +1,4 @@
-
-###Hay 3 tipos de aplicaciones móviles
+### Hay 3 tipos de aplicaciones móviles
 
 - Nativas
 - Web

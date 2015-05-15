@@ -1,9 +1,16 @@
-## Eliminar contenido innecesario
+### Pestaña de información
+#### Crear un *controller*
 
-- Para ocultar las secciones vacías, hay que añadir la directiva **ng-show** al elemento *item-divider*.
+
+- Por cada pestaña, crearemos un *controller* dentro de la carpeta *js/controllers*.
+
+- Empezaremos creando el archivo *about.js* con el siguiente contenido.
 
 ```
-<div class="item item-divider" ng-show="(lineGroup.Registros | filter:search.value).length">
-    {{lineGroup.DescripcionGrupo}}
-</div>
+angular.module('about.controller', [])
+
+.controller('aboutCtrl', function($scope) {
+    $scope.Author = "Mikel Eizagirre";
+    $scope.Description = "Ionic Framework - 2015";
+});
 ```

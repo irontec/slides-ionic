@@ -1,25 +1,3 @@
-## app.js
+### Objetivo de este paso
 
-```
-.config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('towns', {
-        url: '/towns',
-        views: {
-            towns: {
-                templateUrl: 'templates/tab-towns.html',
-            }
-        }
-    })
-
-    $stateProvider.state('about', {
-        url: '/about',
-        views: {
-            about: {
-                templateUrl: 'templates/tab-about.html',
-            }
-        }
-    });
-
-    $urlRouterProvider.otherwise('/towns');
-});
-```
+![](assets/example_01.png)

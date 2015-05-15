@@ -1,2 +1,2 @@
-# Ejemplo práctico
-## Primeros pasos
+## Ejemplo práctico
+### Presentación

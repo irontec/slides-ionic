@@ -1,11 +1,8 @@
-## Aplicaciones híbridas
+### Aplicaciones híbridas
 
-- **Ventajas**
-    - Con un único desarrollo se crean aplicaciones multiplataforma.
-    - Los desarrolladores web se adaptan fácilmente.
-    - Es posible utilizar llamadas nativas.
+- Son una mezcla de los dos tipos anteriores.
+- Encapsulan *web views* dentro de una aplicación nativa.
 
-- **Desventajas**
-    - El rendimiento depende de la eficacia del *WebView*.
-    - Las llamadas nativas dependen de *plugin*s.
-    - Por lo general, no ofrecen interfaz nativa.
+- **Ejemplo**
+    - [Mallzee](http://mallzee.com/#/ "Mallzee") es un ejemplo perfecto de aplicación híbrida.
+    - Aunque parezca nativa y se instala desde las *stores* oficiales, está desarrollada con Ionic.

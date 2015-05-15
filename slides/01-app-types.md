@@ -1,1 +1,1 @@
-# Tipos de aplicaciones móviles
+## Tipos de aplicaciones móviles

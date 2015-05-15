@@ -1,2 +1,2 @@
-# Ejemplo práctico
-## Pestañas
+## Ejemplo práctico
+### Primeros pasos

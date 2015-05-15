@@ -1,11 +1,9 @@
-## Aplicaciones web
+### Aplicaciones web
 
-- **Ventajas**
-    - Son las más fáciles de actualizar y mantener.
-    - No hay que instalarlos.
-    - No dependen de una plataforma concreta.
+- Son **páginas web optimizadas** para dispositivos móviles.
+- Son desarrollados **independientemente del sistema operativo** ya que se ejecutan en el navegador.
 
-- **Desventajas**
-    - No tienen acceso directo a la parte nativa. Dependen de la API ofrecida por el navegador.
-    - Para acceder a ellos, hay que hacerlo mediante un navegador y hay que saber la URL de la app.
-    - Es muy díficil ofrecer una interfaz táctil usable.
+- **Ejemplo**
+    - La página de [Financial Times](http://app.ft.com/#index_page/home "Financial Times") es un ejemplo perfecto de aplicación web.
+    - La versión de escritorio es una web normal.
+    - Si se accede desde un móvil, carga la versión optimizada para móviles.

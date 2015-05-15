@@ -1,3 +1,7 @@
-## Estado del ejemplo
+### Objetivo de este paso
 
-![](assets/example_07.png)
+- En este paso, lo que queremos conseguir es lo siguiente.
+    - Crear un *controller* para la pestaña.
+    - Añadir ese *controller* al estado **about**.
+    - Personalizar la pestaña de información.
+    - Inyectar dependencias e incluir los archivos js.

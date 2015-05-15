@@ -1,3 +1,28 @@
-## Templates
+### Estructura del nuevo proyecto
 
-- A continuación, crearemos varios archivos dentro de la carpeta *www/templates*.
+- Ionic automáticamente genera la siguiente estructura:
+
+```bash
+proyectoNuevo
+├── bower.json
+├── config.xml
+├── gulpfile.js
+├── hooks
+│   ├── after_prepare
+│   └── README.md
+├── ionic.project
+├── package.json
+├── plugins
+│   ├── com.ionic.keyboard
+│   ├── fetch.json
+│   ├── org.apache.cordova.console
+│   └── org.apache.cordova.device
+├── scss
+│   └── ionic.app.scss
+└── www
+    ├── css
+    ├── img
+    ├── index.html
+    ├── js
+    └── lib
+```

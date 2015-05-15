@@ -1,5 +1,6 @@
-## CSS
+### CSS
 
+- Colores
 - *Header*
 - *Footer*
 - Botones

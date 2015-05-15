@@ -1,21 +1,12 @@
-## Añadir Tabs
+### Instalación
 
-- En este punto vamos a cambiar los botones por pestañas.
+- Antes de comenzar la instalación, hay que comprobar que [Node.js](https://nodejs.org/ "Node.js") está instalado.
+- **Node.js** es un entorno de programación en la capa del servidor.
+- Hace posible la ejecución de **Javascript en el servidor** y por lo tanto, el desarrollo de *backends* y aplicaciones de escritorio.
+- Junto a *Grunt*, *Bower* y *Yeoman* forma parte del **toolkit que todo desarrollador web** debería de conocer.
+- Una vez instalado, ejecuta el siguiente comando:
 
-- Para ello, eliminaremos el contenido del ```<body>``` y añadiremos el siguiente código:
+```bash
+npm install -g ionic cordova
 
-```
-<ion-nav-bar class="bar-positive" title="BizkaiBus App"></ion-nav-bar>
-
-<ion-nav-view></ion-nav-view>
-
-<ion-tabs class="tabs-icon-top tabs-positive">
-    <ion-tab href="towns" title="Municipios" icon-off="ion-ios-location-outline" icon-on="ion-ios-location">
-        <ion-nav-view name="towns"></ion-nav-view>
-    </ion-tab>
-
-    <ion-tab href="about" title="Información" icon-off="ion-ios-information-outline" icon-on="ion-ios-information">
-        <ion-nav-view name="about"></ion-nav-view>
-    </ion-tab>
-</ion-tabs>
 ```

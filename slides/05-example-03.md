@@ -1,28 +1,6 @@
-## Estructura del nuevo proyecto
+### OpenBizkaiBus API
 
-- Ionic automáticamente genera la siguiente estructura:
-
-```bash
-proyectoNuevo
-├── bower.json
-├── config.xml
-├── gulpfile.js
-├── hooks
-│   ├── after_prepare
-│   └── README.md
-├── ionic.project
-├── package.json
-├── plugins
-│   ├── com.ionic.keyboard
-│   ├── fetch.json
-│   ├── org.apache.cordova.console
-│   └── org.apache.cordova.device
-├── scss
-│   └── ionic.app.scss
-└── www
-    ├── css
-    ├── img
-    ├── index.html
-    ├── js
-    └── lib
-```
+- Para conseguir la información sobre las líneas, utilizaremos **[OpenBizkaiBus API](http://openbizkaibus.appspot.com/api/)**.
+- OpenBizkaiBus API fue desarrollada por **[Iker Albeniz](http://www.ikeralbeniz.net/)**.
+- La API consiste en varias interfaces. Las peticiones se hacen mediante HTTP GET y nos **devuelve un JSON** con los datos solicitados.
+- Facilita la integración ya que nos **evita** usar la interfaz **SOAP oficial**.

@@ -1,3 +1,3 @@
-###Tecnologías detrás de Ionic Framework
+### Tecnologías detrás de Ionic Framework
 
-![](assets/angcorsas.png)
+![](assets/angcorsas_b.png)

@@ -1,9 +1,17 @@
-## Rutas y estados
+### Ejecutar el proyecto
 
-- Gracias al **$urlRouteProvider** y **$stateProvider** podemos definir el cambio de pestañas.
 
-    - **$stateProvider:** permite declarar diferentes estados según la URL y tendrá asociado un *template*.
+- Para testear el proyecto de una plataforma en concreto, hay dos opciones.
 
-    - **$urlRouteProvider:** cada vez que se cambia de URL se encarga de cargar el estado correspondiente.
+```bash
+ionic [run | emulate] [ios | android]
+```
 
-- En nuestro caso, hay dos estados **towns** y **about**.
+- Para testear la aplicación en un dispositivo iOS, es necesario tener una cuenta de *Apple Developer*.
+
+- Para ejecutar el proyecto en el navegador hay que lanzar el siguiente comando.
+
+
+```bash
+ionic serve [--lab]
+```

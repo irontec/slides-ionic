@@ -6,6 +6,6 @@
 
     - Manipulación mínima del DOM.
 
-    - Han eliminado el delay de 300ms del tap.
+    - Han eliminado el [delay de 300ms](http://blog.ionic.io/hybrid-apps-and-the-curse-of-the-300ms-delay/) del tap.
 
-![](assets/performance.png)
+![](assets/performance_b.png)

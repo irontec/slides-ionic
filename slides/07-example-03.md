@@ -1,20 +1,19 @@
-## Adaptar los estados II
+### Añadir pestañas
 
-- Por último, haremos lo mismo con el estado *about*. Pasará a llamarse **tab.about**.
-
-```
-$stateProvider.state('tab.about', {
-    url: '/about',
-    views: {
-        'tab-about': {
-            templateUrl: 'templates/tab-about.html',
-            controller: 'AboutCtrl'
-        }
-    }
-});
-```
-- Y actualizaremos el **$urlRouterProvider** para que cargue bien la pestaña *towns*.
+- Para ello, eliminaremos el contenido del ```<body>``` y añadiremos el siguiente código:
 
 ```
-$urlRouterProvider.otherwise('/tab/towns');
+<ion-nav-bar class="bar-positive" title="BizkaiBus App"></ion-nav-bar>
+
+<ion-nav-view></ion-nav-view>
+
+<ion-tabs class="tabs-icon-top tabs-positive">
+    <ion-tab href="towns" title="Municipios" icon-off="ion-ios-location-outline" icon-on="ion-ios-location">
+        <ion-nav-view name="towns"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab href="about" title="Información" icon-off="ion-ios-information-outline" icon-on="ion-ios-information">
+        <ion-nav-view name="about"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
 ```

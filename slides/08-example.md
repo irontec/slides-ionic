@@ -1,2 +1,2 @@
-# Ejemplo práctico
-## Mejoras
+## Ejemplo práctico
+### Pestaña de información

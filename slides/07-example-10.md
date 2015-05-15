@@ -1,35 +1,26 @@
-## Añadir info de una línea I
+### Rutas y estados
+#### app.js
 
-- Creamos un nuevo estado.
-
-```
-$stateProvider.state('tab.lines', {
-    url: '/lines/:lineId',
-    views: {
-        'tab-towns': {
-            templateUrl: 'templates/tab-lines.html',
-            controller: 'LineCtrl'
+```javascript
+.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider.state('towns', {
+        url: '/towns',
+        views: {
+            'towns': {
+                templateUrl: 'templates/tab-towns.html',
+            }
         }
-    }
-})
-```
+    })
 
-- Creamos un *controller* para esa pestaña.
+    $stateProvider.state('about', {
+        url: '/about',
+        views: {
+            'about': {
+                templateUrl: 'templates/tab-about.html',
+            }
+        }
+    });
 
-```
-angular.module('lines.controller', [])
-
-.controller('LinesCtrl', function($scope, $stateParams, $http, ApiEndpoint) {
-
-    $http.get(ApiEndpoint.url + '/Buscar_TextoHorarioLinea?codlinea=' + $stateParams.lineId)
-        .then(function(response) {
-
-            $scope.line = response.data;
-
-        }, function(err) {
-
-            console.error('ERR', err);
-
-        })
-})
+    $urlRouterProvider.otherwise('/towns');
+});
 ```

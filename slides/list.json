@@ -4,15 +4,28 @@
         "01-app-types.md",
         "01-app-types-01-list.md",
         "01-app-types-02-natives.md",
+        "01-app-types-02-natives-01.md",
         "01-app-types-03-web.md",
-        "01-app-types-04-hybrid.md"
+        "01-app-types-03-web-01.md",
+        "01-app-types-04-hybrid.md",
+        "01-app-types-04-hybrid-01.md"
     ], [
         "02-what-is.md",
         "02-what-is-01-definition.md",
         "02-what-is-02-technologies.md",
         "02-what-is-03-angular.md",
+        "02-what-is-03-angular-01.md",
+        "02-what-is-03-angular-02.md",
+        "02-what-is-03-angular-03.md",
+        "02-what-is-03-angular-04.md",
+        "02-what-is-03-angular-05.md",
         "02-what-is-04-cordova.md",
-        "02-what-is-05-sass.md"
+        "02-what-is-05-sass.md",
+        "02-what-is-05-sass-01.md",
+        "02-what-is-05-sass-02.md",
+        "02-what-is-05-sass-03.md",
+        "02-what-is-05-sass-04.md",
+        "02-what-is-06.md"
     ], [
         "03-features.md",
         "03-features-01-look.md",
@@ -23,6 +36,7 @@
     ], [
         "04-components.md",
         "04-components-01-css.md",
+        "04-components-01-css-00.html",
         "04-components-01-css-01.html",
         "04-components-01-css-02.html",
         "04-components-01-css-03.html",
@@ -31,19 +45,20 @@
         "04-components-01-css-06.html",
         "04-components-01-css-07.html",
         "04-components-02-javascript.md",
+        "04-components-02-javascript-01.html",
+        "04-components-02-javascript-02.html",
+        "04-components-02-javascript-03.html",
+        "04-components-02-javascript-04.html",
+        "04-components-02-javascript-05.md",
+        "04-components-02-javascript-06.html",
+        "04-components-02-javascript-07.html",
         "04-components-03-cli.md",
         "04-components-04-icons.md"
     ], [
         "05-example.md",
         "05-example-01.md",
         "05-example-02.md",
-        "05-example-03.md",
-        "05-example-04.md",
-        "05-example-05.md",
-        "05-example-06.md",
-        "05-example-07.md",
-        "05-example-08.md",
-        "05-example-09.md"
+        "05-example-03.md"
     ], [
         "06-example.md",
         "06-example-01.md",
@@ -55,17 +70,11 @@
         "06-example-07.md",
         "06-example-08.md",
         "06-example-09.md",
+        "06-example-09_1.md",
         "06-example-10.md",
+        "06-example-10_1.md",
         "06-example-11.md",
-        "06-example-12.md",
-        "06-example-13.md",
-        "06-example-14.md",
-        "06-example-15.md",
-        "06-example-16.md",
-        "06-example-17.md",
-        "06-example-18.md",
-        "06-example-19.md",
-        "06-example-20.md"
+        "06-example-11_1.md"
     ], [
         "07-example.md",
         "07-example-01.md",
@@ -73,18 +82,85 @@
         "07-example-03.md",
         "07-example-04.md",
         "07-example-05.md",
+        "07-example-05_2.md",
         "07-example-06.md",
         "07-example-07.md",
         "07-example-08.md",
+        "07-example-08_2.md",
         "07-example-09.md",
         "07-example-10.md",
-        "07-example-11.md",
-        "07-example-12.md"
+        "07-example-10_2.md"
     ], [
         "08-example.md",
         "08-example-01.md",
         "08-example-02.md",
         "08-example-03.md",
-        "08-example-04.md"
+        "08-example-03_1.md",
+        "08-example-04.md",
+        "08-example-04_1.md",
+        "08-example-05.md",
+        "08-example-05_1.md",
+        "08-example-06.md",
+        "08-example-06_1.md"
+    ], [
+        "09-example.md",
+        "09-example-01.md",
+        "09-example-02.md",
+        "09-example-03.md",
+        "09-example-03_1.md",
+        "09-example-04.md",
+        "09-example-04_1.md",
+        "09-example-05.md",
+        "09-example-05_1.md",
+        "09-example-06.md",
+        "09-example-06_1.md",
+        "09-example-07.md",
+        "09-example-08.md",
+        "09-example-09.md",
+        "09-example-10.md",
+        "09-example-11.md",
+        "09-example-12.md"
+    ], [
+        "10-example.md",
+        "10-example-01.md",
+        "10-example-02.md",
+        "10-example-03.md",
+        "10-example-04.md",
+        "10-example-05.md",
+        "10-example-06.md",
+        "10-example-06_1.md",
+        "10-example-07.md",
+        "10-example-07_1.md",
+        "10-example-08.md",
+        "10-example-08_1.md",
+        "10-example-09.md",
+        "10-example-10.md",
+        "10-example-10_1.md",
+        "10-example-11.md",
+        "10-example-12.md",
+        "10-example-13.md",
+        "10-example-13_1.md"
+    ], [
+        "11-example.md",
+        "11-example-01.md",
+        "11-example-02.md",
+        "11-example-03.md",
+        "11-example-03_1.md",
+        "11-example-04.md",
+        "11-example-04_1.md",
+        "11-example-05.md",
+        "11-example-06.md",
+        "11-example-06_1.md",
+        "11-example-07.md",
+        "11-example-07_1.md"
+    ], [
+        "12-example.md",
+        "12-example-01.md",
+        "12-example-02.md",
+        "12-example-03.md",
+        "12-example-04.md",
+        "12-example-05.md",
+        "12-example-06.md",
+        "12-example-07.md"
     ]
 ]

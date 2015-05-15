@@ -1,30 +1,16 @@
-## *Controllers*
+### Modificar el *Header*
 
+- El código correspondiente al *header* del nuevo proyecto está en el archivo *www/index.html*.
 
-- Por cada pestaña, crearemos un *controller* dentro de la carpeta *js/controllers*.
-
-- Empezaremos creando el archivo *about.js* con el siguiente contenido
-
+```html
+<ion-header-bar class="bar-stable">
+  <h1 class="title">Ionic Blank Starter</h1>
+</ion-header-bar>
 ```
-angular.module('about.controller', [])
+- En este caso, modificaremos el título para adaptarlo al ejemplo y le cambiaremos el color.
 
-.controller('AboutCtrl', function($scope) {
-
-    $scope.Author = "Mikel Eizagirre";
-    $scope.Description = "Ionic Framework - 2015";
-
-});
-```
-- Además, debemos modificar el estado *about* para que cargue el controller *AboutCtrl*.
-
-```
-$stateProvider.state('about', {
-    url: '/about',
-    views: {
-        about: {
-            templateUrl: 'templates/tab-about.html',
-            controller: 'AboutCtrl'
-        }
-    }
-});
+```html
+<ion-header-bar class="bar-positive">
+  <h1 class="title">BizkaiBus App</h1>
+</ion-header-bar>
 ```

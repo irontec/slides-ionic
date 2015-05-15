@@ -1,4 +1,8 @@
 
 # Ionic Framework
 
-Mikel Eizagirre - 2015
+> Mikel Eizagirre @ Irontec 2015
+
+![](assets/BBF.png)
+
+#### **#IonicIrontec**

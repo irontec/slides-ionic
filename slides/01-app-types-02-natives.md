@@ -1,10 +1,9 @@
-## Aplicaciones nativas
+### Aplicaciones nativas
 
-- **Ventajas**
-    - Acceso directo a la API y librerías gráficas de la plataforma.
-    - Si se programan bien, tienen el mejor rendimiento.
+- Cada plataforma dispone de un **SDK** para desarrollar aplicaciones.
+- Utilizando dichas herramientas se genera **código binario** que puede ser ejecutado en esa plataforma.
 
-- **Desventajas**
-    - Obligado a usar el lenguaje de cada plataforma y a conocer su API.
-    - Cada desarrollo es especifico para cada plataforma.
-    - Normalmente requieren más esfuerzo.
+- **Ejemplo**
+    - [Ingress](https://play.google.com/store/apps/details?id=com.nianticproject.ingress&hl=es "Ingress para Android") es un ejemplo perfecto de aplicación nativa.
+    - Utiliza varias funciones del hardware del dispositivo.
+    - Su interfaz es totalmente independientemente del navegador.
