@@ -89,7 +89,7 @@ module.exports = (grunt) ->
                 message: 'Built from %sourceCommit% on branch %sourceBranch%'
             pages:
                 options:
-                    remote: 'git@github.com:irontec/curso-ionic.git'
+                    remote: 'git@github.com:irontec/slides-ionic.git'
                     branch: 'gh-pages'
 
 
