@@ -29,7 +29,7 @@ module.exports = (grunt) ->
             jshint:
                 files: ['js/*.js']
                 tasks: ['jshint']
-        
+
         connect:
 
             livereload:
@@ -37,7 +37,7 @@ module.exports = (grunt) ->
                     port: 9000
                     # Change hostname to '0.0.0.0' to access
                     # the server from outside.
-                    hostname: 'localhost'
+                    hostname: '0.0.0.0'
                     base: '.'
                     open: true
                     livereload: true
@@ -67,7 +67,9 @@ module.exports = (grunt) ->
                     src: [
                         'slides/**'
                         'bower_components/**'
-                        'js/**'
+                        'js/**',
+                        'styles/**',
+                        'assets/**'
                     ]
                     dest: 'dist/'
                 },{
@@ -77,7 +79,7 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
-        
+
         buildcontrol:
 
             options:
@@ -89,7 +91,7 @@ module.exports = (grunt) ->
                 options:
                     remote: 'git@github.com:irontec/curso-ionic.git'
                     branch: 'gh-pages'
-        
+
 
 
     # Load all grunt tasks.
@@ -131,13 +133,13 @@ module.exports = (grunt) ->
             'copy'
         ]
 
-    
+
     grunt.registerTask 'deploy',
         'Deploy to Github Pages', [
             'dist'
             'buildcontrol'
         ]
-    
+
 
     # Define default task.
     grunt.registerTask 'default', [
