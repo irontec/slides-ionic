@@ -1,2 +1,0 @@
-
-## ¿Qué es Ionic Framework?

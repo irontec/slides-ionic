@@ -1,2 +1,0 @@
-## Ejemplo práctico
-### Mejoras
