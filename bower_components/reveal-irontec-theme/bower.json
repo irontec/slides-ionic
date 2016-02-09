@@ -1,0 +1,26 @@
+{
+  "name": "reveal-irontec-theme",
+  "version": "1.0.8",
+  "authors": [
+    "Victor Vargas <victor@irontec.com>"
+  ],
+  "main": [
+    "css/styleDark.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "reveal",
+    "irontec",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
