@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
+ * to the default theme. The accent color is #b0232a (IronRed).
  *
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
@@ -12,8 +12,8 @@
  *********************************************/
 body {
     background-image: url(../img/waveTop.jpg),url(../img/footerIrontec.jpg);
-    background-repeat: no-repeat,repeat-x;
-    background-size: 100% auto,auto 50px;
+    background-repeat: no-repeat;
+    background-size: 100% auto,100%;
     background-position: center top, center bottom;
     background-color: #fff;
 }
@@ -27,7 +27,7 @@ body {
 
 ::selection {
   color: white;
-  background: rgba(0, 0, 0, 0.99);
+  background: rgba(176, 35, 42, 0.99);
   text-shadow: none; }
 
 /*********************************************
@@ -45,16 +45,28 @@ body {
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
-  text-shadow: none; }
+  text-shadow: none;
+  font-weight: bold;
+}
 
 .reveal h1 {
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 80px;}
+
+.reveal h3 {
+  color: #b0232a;
+  }
+
+.reveal h4 strong {
+  color: #b0232a;
+  font-style: italic;
+}
 
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: darkblue;
+  color: #b0232a;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -63,7 +75,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #ce2e29;
   text-shadow: none;
   border: none; }
 
@@ -72,28 +84,59 @@ body {
   background: #00003f; }
 
 /*********************************************
+* LISTS
+*********************************************/
+.reveal li {
+  margin-bottom: 10px;}
+
+.reveal li ul li {
+  margin-bottom: 4px;}
+
+/*********************************************
+* LISTS
+*********************************************/
+.reveal pre code {
+  max-height: 565px !important; }
+
+/*********************************************
+* BLOCKQUOTE
+*********************************************/
+
+.reveal blockquote {
+  width: 85%;
+  color: #b0232a;
+  box-shadow: none;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+/*********************************************
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -ms-transition: all .2s linear;
   -o-transition: all .2s linear;
-  transition: all .2s linear; }
+  transition: all .2s linear;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 700px;}
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: darkblue;
+  border-color: #b0232a;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
+.reveal .span4 img {
+  box-shadow: none;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
- 
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: rgb(127, 127, 127); }
@@ -111,17 +154,20 @@ body {
   border-top-color: rgb(127, 127, 127); }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #B0232A; }
+  border-right-color: #ce2e29; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #B0232A; }
+  border-left-color: #ce2e29; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #B0232A; }
+  border-bottom-color: #ce2e29; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #B0232A; }
-  
+  border-top-color: #ce2e29; }
+
+.reveal .controls {
+  margin-bottom: 60px; }
+
 /*********************************************
  * PROGRESS BAR
  *********************************************/
@@ -140,21 +186,8 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: darkblue; 
+  color: #b0232a;
  }
- 
-/*********************************************
- * CODE
- *********************************************/
- .reveal pre code {
-  display: block;
-  padding: 5px;
-  overflow: auto;
-  max-height: 400px;
-  word-wrap: normal;
-  background: #3F3F3F;
-  color: #DCDCDC;
-}
 
 /*********************************************
  * Irontec
@@ -167,10 +200,10 @@ body {
 
 .reveal .controls {
     z-index: 9999;
-    right: 0px;
-    bottom: 45px;
+    right: 5px;
+    bottom: 5px;
 }
- 
+
 /*********************************************
  * FOOTER
  *********************************************/
@@ -188,7 +221,7 @@ footer {
 /*********************************************
  * LOGO STRUCTURA
  *********************************************/
- 
+
 #irontec3D {
   -webkit-perspective: 800px;
   position: relative;
@@ -690,6 +723,210 @@ footer {
   -moz-transform:translateZ(-5em) rotateY(180deg);
 }
 
+#irontec3D {
+  -ms-perspective: 800px;
+}
+#irontec3D .sceneIrontec, .forma, .cara, .cara-wrapper, .crNone {
+  -ms-transform-style: preserve-3d;
+}
+.forma {
+  -ms-transform-origin: 50%;
+}
+.cara, .cara-wrapper {
+  -ms-transform-origin: 0 0;
+  -ms-backface-visibility: hidden;
+}
+[class*="cilindro"] .tp {
+  -ms-transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cilindro"] .bm {
+  -ms-transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cubitoId"] .rt {
+  -ms-transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cubitoId"] .lt {
+  -ms-transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cubitoId"] .tp {
+  -ms-transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cubitoId"] .bm {
+  -ms-transform: rotateX(-90deg) translateY(-50%);
+}
+.cil-1 {
+  -ms-transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.cil-1 .s0 {
+  -ms-transform: rotateY(3.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s1 {
+  -ms-transform: rotateY(10.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s2 {
+  -ms-transform: rotateY(18deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s3 {
+  -ms-transform: rotateY(25.200000000000003deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s4 {
+  -ms-transform: rotateY(32.4deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s5 {
+  -ms-transform: rotateY(39.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s6 {
+  -ms-transform: rotateY(46.800000000000004deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s7 {
+  -ms-transform: rotateY(54deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s8 {
+  -ms-transform: rotateY(61.2deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s9 {
+  -ms-transform: rotateY(68.39999999999999deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s10 {
+  -ms-transform: rotateY(75.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s11 {
+  -ms-transform: rotateY(82.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s12 {
+  -ms-transform: rotateY(90deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s13 {
+  -ms-transform: rotateY(97.2deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s14 {
+  -ms-transform: rotateY(104.39999999999999deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s15 {
+  -ms-transform: rotateY(111.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s16 {
+  -ms-transform: rotateY(118.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s17 {
+  -ms-transform: rotateY(126deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s18 {
+  -ms-transform: rotateY(133.2deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s19 {
+  -ms-transform: rotateY(140.4deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s20 {
+  -ms-transform: rotateY(147.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s21 {
+  -ms-transform: rotateY(154.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s22 {
+  -ms-transform: rotateY(162deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s23 {
+  -ms-transform: rotateY(169.2deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s24 {
+  -ms-transform: rotateY(176.4deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s25 {
+  -ms-transform: rotateY(183.6deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s26 {
+  -ms-transform: rotateY(190.8deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s27 {
+  -ms-transform: rotateY(198deg) translate3D(-50%, 0, 9.975em);
+/*   display: none; */
+}
+.cil-1 .s28 {
+  -ms-transform: rotateY(205.2deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s29 {
+  -ms-transform: rotateY(212.4deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s30 {
+  -ms-transform: rotateY(219.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s31 {
+  -ms-transform: rotateY(226.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s32 {
+  -ms-transform: rotateY(234deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s33 {
+  -ms-transform: rotateY(241.2deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s34 {
+  -ms-transform: rotateY(248.4deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s35 {
+  -ms-transform: rotateY(255.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s36 {
+  -ms-transform: rotateY(262.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s37 {
+  -ms-transform: rotateY(270.00000000000006deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s38 {
+  -ms-transform: rotateY(277.20000000000005deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s39 {
+  -ms-transform: rotateY(284.40000000000003deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s40 {
+  -ms-transform: rotateY(291.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s41 {
+  -ms-transform: rotateY(298.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s42 {
+  -ms-transform: rotateY(306.00000000000006deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s43 {
+  -ms-transform: rotateY(313.20000000000005deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s44 {
+  -ms-transform: rotateY(320.40000000000003deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s45 {
+  -ms-transform: rotateY(327.6deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s46 {
+  -ms-transform: rotateY(334.8deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s47 {
+  -ms-transform: rotateY(342.00000000000006deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s48 {
+  -ms-transform: rotateY(349.20000000000005deg) translate3D(-50%, 0, 9.975em);
+}
+.cil-1 .s49 {
+  -ms-transform: rotateY(356.40000000000003deg) translate3D(-50%, 0, 9.975em);
+}
+.cub-1 {
+  -ms-transform:translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.cub-1 .ft {
+  -ms-transform:translateZ(5em);
+}
+.cub-1 .bk {
+  -ms-transform:translateZ(-5em) rotateY(180deg);
+}
+
+
+
+
+
 
 #irontec3D {
   perspective: 800px;
@@ -899,41 +1136,41 @@ footer {
 /*********************************************
  * LOGO ANIMADO
  *********************************************/
- 
- 
- 
+
+
+
  #irontec3D {
     margin: auto;
 /*  -webkit-transform: scale(0.7); */
 }
 
-.present > #irontec3D .irontecName {
+.present .irontecName {
     position: absolute;
     background: url(../img/logo_irontec.png) no-repeat left center;
     width: 100%;
     height: 300px;
-    
+
     -webkit-animation: backgroundName 8s;
     -moz-animation: backgroundName 8s;
     animation: backgroundName 8s;
 }
-.present > #irontec3D .sceneIrontec {
+.present .sceneIrontec {
     -webkit-animation: sceneIrontec 8s;
     -moz-animation: sceneIrontec 8s;
     animation: sceneIrontec 8s;
-    
+
     -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
     -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
 }
 
-.present > #irontec3D .cubitoId-1 {
+.present .cubitoId-1 {
     -webkit-animation: cuboIrontec 8s;
     -moz-animation: cuboIrontec 8s;
     animation: cuboIrontec 8s;
 }
 
-.present > #irontec3D .cilindro-1 {
+.present .cilindro-1 {
     -webkit-animation: circleIrontec 8s;
     -moz-animation: circleIrontec 8s;
     animation: circleIrontec 8s;
@@ -987,10 +1224,10 @@ footer {
        -webkit-transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
     }
     75% {
-       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px); 
+       -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
     }
     100% {
        -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
@@ -1015,22 +1252,27 @@ footer {
 @keyframes cuboIrontec {
     0% {
        -moz-transform: translate3D(0em, 0em, -6.5em) rotateX(450deg) rotateY(0deg) rotateZ(0deg);
+       -ms-transform: translate3D(0em, 0em, -6.5em) rotateX(450deg) rotateY(0deg) rotateZ(0deg);
        transform: translate3D(0em, 0em, -6.5em) rotateX(450deg) rotateY(0deg) rotateZ(0deg);
     }
     50% {
        -moz-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+       -ms-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
        transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     62.5% {
        -moz-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
     75% {
        -moz-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
     100% {
        -moz-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, -6.5em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
 }
@@ -1042,21 +1284,25 @@ footer {
     50% {
        opacity: 0.0;
        -moz-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+       -ms-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
        transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     62.5% {
        opacity: 1.0;
        -moz-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
     75% {
        opacity: 1.0;
        -moz-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
     100% {
        opacity: 1.0;
        -moz-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+       -ms-transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
        transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(360deg);
     }
 }
@@ -1064,18 +1310,22 @@ footer {
 @keyframes sceneIrontec {
     0% {
        -moz-transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
+       -ms-transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
        transform: rotateX(45deg) rotateY(90deg) translate3d(-700px,0px,-150px);
     }
     50% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) scale3d(0.4,0.4,0.4) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) translate3d(0px,0px,0px);
     }
     75% {
-       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
-       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(0.6,0.6,0.6) translate3d(0px,0px,0px);
+       -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
+       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) scale3d(1,1,1) translate3d(0px,0px,0px);
     }
     100% {
        -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
+       -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
        transform: rotateX(-90deg) rotateY(0deg) rotateZ(-360deg) scale3d(0.18,0.18,0.18) translate3d(-1000px,0px,0px);
     }
 }

@@ -1,0 +1,2 @@
+
+![](assets/cordova-logo.png)

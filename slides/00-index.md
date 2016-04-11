@@ -1,8 +1,4 @@
 
-# Ionic Framework
+![](assets/ionic-logo.png)
 
-> Mikel Eizagirre @ Irontec 2015
-
-![](assets/BBF.png)
-
-#### **#IonicIrontec**
+> Mikel Eizagirre @ Irontec 2016
